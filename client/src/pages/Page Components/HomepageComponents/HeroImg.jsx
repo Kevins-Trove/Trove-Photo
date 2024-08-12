@@ -15,8 +15,8 @@ function HeroImg() {
         navigate('/login');
     };
     
-    const goToEventsPage = () => {
-        navigate('/events');
+    const goToPhotoBoardPage = () => {
+        navigate('/photoboard');
     };
     return (
     <header style={{paddingLeft: 0}}>
@@ -27,16 +27,16 @@ function HeroImg() {
         >
         <div>
             <div className="d-flex justify-content-center align-items-center h-100">
-                <div className='hero-text mask'>
-                    <h1 className="mb-3">Tandem</h1>
-                    <h4 className="mb-3">Travel with friends</h4>
+                <div className='hero-text div-transparent'>
+                    <h1 className="mb-3">Photo Trove</h1>
+                    <h4 className="mb-3">Private photo vault</h4>
                     
                    
                     {token ? 
-                        <Button className='button' onClick={goToEventsPage}>
-                            View Event
+                        <Button className='button button-default' onClick={goToPhotoBoardPage}>
+                            Photos
                         </Button>
-                         : <Button className='button' onClick={goToLoginPage}>
+                         : <Button className='button button-default' onClick={goToLoginPage}>
                             Login
                         </Button>
                     }
