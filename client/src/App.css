@@ -1,0 +1,29 @@
+
+/* 1d3e4d */
+
+/* Root color varibles */
+:root {
+    --backgroundColor: white;
+    --ninja-color: red;
+    --buttonBackColor: #369739;
+  }
+  
+  /* global settings */
+  * {
+    font-family: Arial;
+    background-color: var(--backgroundColor);
+    
+    color: white;
+  }
+  
+    
+.navbar-custom {
+background-color: var(--backgroundColor);
+}
+
+.profile-photo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Apply drop shadow */
+}

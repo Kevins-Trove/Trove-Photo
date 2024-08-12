@@ -1,7 +1,7 @@
 import { Nav } from "react-bootstrap";
 import { Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from '../../../public/blueLogo.png';
+import Logo from '../../../public/TrovePhoto-Headshot-left.jpg';
 
 import Auth from '../../utils/auth';
 
@@ -9,19 +9,17 @@ function MainNav() {
   
   return (
     <div className="nav-container mb-5">
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
-            <Navbar.Brand href="/#home">
+        <Navbar collapseOnSelect class="navbar navbar-expand-lg navbar-light bg-ligh " >
+            <Navbar.Toggle aria-controls="navbar-collapse-id" />
+            <Navbar.Collapse id="navbar-collapse-id">
+                <Nav >
+                <Navbar.Brand href="/#home">
                 <img
                     src={Logo}
-                    width="50"
-                    height="50"
-                    className="d-inline-block align-top m-auto"
+                    className="d-inline-block align-top m-auto profile-photo"
                     alt="Brand Name logo"
                 />{' '}
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbar-collapse-id" />
-            <Navbar.Collapse id="navbar-collapse-id">
-                <Nav>
                     <Nav.Link as={Link} to='/'>
                         Home
                     </Nav.Link>
@@ -47,13 +45,6 @@ function MainNav() {
                     
                          : null
                     }
-                    {Auth.loggedIn() ? 
-                        null
-                         : 
-                         <Nav.Link as={Link} to='About'>
-                         About
-                     </Nav.Link>
-                    }
                     
                     
 
@@ -76,6 +67,7 @@ function MainNav() {
                     
                 </Nav>
             </Navbar.Collapse>
+            
         </Navbar>
         
                     
