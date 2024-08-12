@@ -1,0 +1,23 @@
+.error {
+  display: flex;
+  justify-content: center;
+  /* background-image: url("https://media.tenor.com/f35gsIVFY_wAAAAM/sad-old.gif"); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 2em;
+  padding: 10em;
+}
+
+.content {
+  align-items: center;
+  justify-content: center;
+}
+
+.help {
+  margin-top: 4em;
+}
+
+h1 h2 h4 h5 {
+  font-weight: 500;
+}

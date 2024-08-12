@@ -1,0 +1,117 @@
+:root {
+  --logo-color: #cfc9f3;
+  --army-color: #6a6454;
+  --white: #f5f5f5;
+  /* new */
+  --dblue: #1a2737;
+  --lblue: #1c3751;
+  --dgrey: #383a43;
+  --lgrey: #697583;
+  --grey: #878688;
+  --white: #eaf2ef;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.hero {
+  margin-top: 82.25px;
+  width: 100%;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 1em;
+}
+
+#hero .hero-text {
+  color: var(--white);
+}
+
+.hero-text h1 {
+  font-size: 5em;
+}
+
+.hero-text h4 {
+  font-size: 30px;
+}
+
+.button {
+  color: var(--dgrey);
+  background-color: var(--white);
+  border-color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--lgrey);
+  border-color: var(--lgrey);
+  transition: 0.4s;
+}
+
+.container {
+  /* display: flex;
+  flex-wrap: wrap; */
+}
+.subtitle {
+  margin-top: 2em;
+  font-wieght: 600px;
+  font-size: 4em;
+  color: var(--lblue);
+  /* justify-content: center; */
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 3;
+  margin: 1em;
+  /* margin-top: 9em; */
+  /* justify-content: space-evenly; */
+}
+
+.card {
+  margin: 1em;
+  width: 300px;
+}
+
+.card:hover {
+  box-shadow: var(--dgrey) 12px 12px;
+  transition: 0.5s;
+}
+
+.card-body {
+  margin: 1.5em;
+}
+
+@media (max-width: 576px) {
+  .container {
+    justify-content: center;
+  }
+  .subtitle {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 200px) {
+  .subtitle {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    justify-content: center;
+  }
+
+  .subtitle {
+    font-size: 3em;
+  }
+}
