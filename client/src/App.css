@@ -3,27 +3,47 @@
 
 /* Root color varibles */
 :root {
-    --backgroundColor: white;
-    --ninja-color: red;
-    --buttonBackColor: #369739;
+    --backgroundColor: #c54b23;
+    --buttonBackColor: #1d333e;
+    --hightlightColor: #c54b23;
+    --textColor: #white;
   }
   
   /* global settings */
   * {
     font-family: Arial;
-    background-color: var(--backgroundColor);
-    
-    color: white;
+    color:  var(--textColor);
   }
   
+body {
     
-.navbar-custom {
-background-color: var(--backgroundColor);
+}
+
+.button-default {
+    background-color: var(--buttonBackColor);
+    color:  var(--hightlightColor);
+}
+
+.profile-div {
+    padding-left: 20px;
+    height: 75px;
+    height: 75px;
 }
 
 .profile-photo {
+  
     width: 75px;
     height: 75px;
+    border-color: var(--hightlightColor) ;
     border-radius: 50%;
+    border-width: 2px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Apply drop shadow */
 }
+
+.nav-link{
+    color: #ffffff !important;
+}
+
+.navbar-nav .active {
+    color: red;
+  }
