@@ -1,6 +1,6 @@
 import './index.css';
-import HeroImg from '../Page Components/HomepageComponents/HeroImg';
-import Footer from '../Page Components/HomepageComponents/footerSection';
+import VideoBackground from '../PageComponents/VideoBackground';
+//import Footer from '../PageComponents/HomepageComponents/footerSection';
 
 export default function Home() {
 
@@ -9,8 +9,8 @@ export default function Home() {
     
   
     <div className="hero">
-        <HeroImg />
-        <Footer />
+        <VideoBackground />
+  
     </div>
   )
 }

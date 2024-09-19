@@ -15,21 +15,13 @@ const AboutForm = () => {
          <div>
             <div className="d-flex justify-content-center align-items-center h-100">
                 <div className='hero-text mask'>
-                    <h1 className="mb-3">Tandem</h1>
-                    <h4 className="mb-3">Travel with friends</h4>
+                    <h1 className="mb-3">Photo Trove</h1>
+                    <h4 className="mb-3">Photo vault</h4>
                     
                     <p>
                     While this project is under development.
                     </p>
-                    <p>
-                    TandemTravel is an app designed for groups to plan events together and synchronize their travel details in real time.
-                    </p>
-                    <p>
-                    In the near future options for TandemTravel will offer a fully integrated group calendar, chat, and travel resources and the ability to coordinate and purchase tickets for entertainment venues, theme parks, and even restaurants reservations.
-                    </p>
-                    <h3>
-                    Tandem Travel will be a one stop spot to get your friends and family together.
-                    </h3>
+                    
                 </div>
             </div>
         </div>

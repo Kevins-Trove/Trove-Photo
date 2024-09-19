@@ -15,7 +15,7 @@ function MainNav() {
     };
 
   return (
-    <div className="nav-container mb-5">
+    <div className="nav-position nav-container mb-5">
         <Navbar collapseOnSelect class="navbar navbar-expand-lg navbar-light bg-ligh " >
             <Navbar.Toggle aria-controls="navbar-collapse-id" />
             <Navbar.Collapse id="navbar-collapse-id">
@@ -32,20 +32,6 @@ function MainNav() {
                     <Nav.Link as={Link} to='/' className="align-center m-auto" onClick={() => handleLinkClick('home')}>
                         Home
                     </Nav.Link>
-                    {Auth.loggedIn() ?
-                        <Nav.Link as={Link} to='events'>
-                        Events
-                        </Nav.Link>
-                         : null
-                    }
-                    
-                    {Auth.loggedIn() ? 
-                        <Nav.Link as={Link} to='Huddle' className="align-center m-auto">
-                        Huddle
-                    </Nav.Link>
-                    
-                         : null
-                    }
                     
                     
                     

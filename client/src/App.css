@@ -16,7 +16,21 @@
   }
   
 body {
-    
+  z-index: 100;
+}
+
+.videoBackground {
+  position: absolute;
+  top:100px;
+  left: 0px;
+  width: 100vw;
+  z-index: 0;
+
+}
+
+.nav-position{
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
 }
 
 .button-default {

@@ -1,7 +1,7 @@
 
 import AboutForm from './AboutForm';
-import InfoCards from '../Page Components/HomepageComponents/info-section';
-import Footer from '../Page Components/HomepageComponents/footerSection';
+
+import Footer from '../PageComponents/HomepageComponents/footerSection';
 
 export default function About() {
 
@@ -11,7 +11,7 @@ export default function About() {
   
     <div className="hero">
         <AboutForm />
-        <InfoCards />
+        
         <Footer />
     </div>
   )

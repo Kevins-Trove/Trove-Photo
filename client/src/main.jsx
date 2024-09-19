@@ -10,10 +10,6 @@ import About from './pages/About';
 import CreateAccount from './pages/CreateAccount';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import EventList from './pages/EventList';
-import EventSingle from './pages/EventSingle';
-import EventAdd from './pages/EventAdd';
-import EventEdit from './pages/EventEdit';
 
 
 
@@ -36,22 +32,6 @@ const router = createBrowserRouter([
       {
         path: '/CreateAccount',
         element: <CreateAccount />
-      },
-      {
-        path: '/events',
-        element: <EventList />
-      },
-      {
-        path: '/event/:eventId',
-        element: <EventSingle />
-      },
-      {
-        path: '/event/edit/:eventId',
-        element: <EventEdit />
-      },
-      {
-        path: '/event/add',
-        element: <EventAdd />
       },
       {
         path: '/about',
