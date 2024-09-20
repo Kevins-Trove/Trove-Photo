@@ -1,5 +1,6 @@
 import { gql } from '@apollo/client';
 
+
 export const QUERY_EVENT_LIST = gql`
 query getEventList {
   events {

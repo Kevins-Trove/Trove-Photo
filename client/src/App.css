@@ -3,10 +3,13 @@
 
 /* Root color varibles */
 :root {
-    --backgroundColor: #c54b23;
-    --buttonBackColor: #1d333e;
-    --hightlightColor: #c54b23;
-    --textColor: #white;
+    --backgroundColor: rgba(108, 16, 117, 1);
+    --backgroundColor_faded:rgba(0, 0, 0, 0.5);
+    --transparent:rgba(0, 0, 0, 0);
+    --buttonBackColor:rgba(108, 16, 117, 1);
+    --hightlightColor: rgba(251, 251, 2, 1);
+    --button_hightlightColor: #47a347;
+    --textColor: rgba(255,255,255,1);
   }
   
   /* global settings */
@@ -15,35 +18,97 @@
     color:  var(--textColor);
   }
   
-body {
-    
+
+
+
+.nav-position{
+  background-color: var(--backgroundColor);
+  
 }
 
 .button-default {
-    background-color: var(--buttonBackColor);
-    color:  var(--hightlightColor);
+    background-color: var(--buttonBackColor)  !important;
+    border-color: var(--buttonBackColor)  !important;
+    color:  var(--textColor)  !important;
+    padding: 5px;
+    margin: 5px;
 }
 
-.profile-div {
-    padding-left: 20px;
-    height: 75px;
-    height: 75px;
+.button-default:hover {
+  
+  border-color: var(--hightlightColor)  !important;
+  color:  var(--hightlightColor)  !important;
 }
+
+.button-hightlight {
+  background-color: var(--button_hightlightColor)  !important;
+  border-color: var(--buttonBackColor)  !important;
+  color:  var(--textColor)  !important;
+  padding: 5px;
+  margin: 5px;
+}
+
+.button-hightlight:hover {
+
+border-color: var(--hightlightColor)  !important;
+color:  var(--hightlightColor)  !important;
+} 
+.hero-background{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.hero-container{
+  position: absolute;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+  height: 85%;
+  top: 100px;
+  z-index: 0;
+}
+
+.hero-div{
+  position: relative;
+  flex: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-items: center;
+  align-content: center;
+  background-color:  var(--backgroundColor_faded)  !important;
+  padding: 30px;
+  border-radius: 25px;
+}
+
+.hero-button-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .profile-photo {
-  
-    width: 75px;
-    height: 75px;
-    border-color: var(--hightlightColor) ;
-    border-radius: 50%;
-    border-width: 2px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Apply drop shadow */
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Apply drop shadow */
 }
 
-.nav-link{
-    color: #ffffff !important;
+.profile-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
 }
-
-.navbar-nav .active {
-    color: red;
-  }

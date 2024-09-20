@@ -1,7 +1,7 @@
 
 import LoginForm from './LoginForm';
-import InfoCards from '../Page Components/HomepageComponents/info-section';
-import Footer from '../Page Components/HomepageComponents/footerSection';
+import HeroImg from '../PageComponents/HomepageComponents/HeroImg';
+
 
 export default function Login() {
 
@@ -10,9 +10,8 @@ export default function Login() {
     
   
     <div className="hero">
+         <HeroImg />
         <LoginForm />
-        <InfoCards />
-        <Footer />
     </div>
   )
 }

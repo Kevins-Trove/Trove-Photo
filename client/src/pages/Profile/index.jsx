@@ -1,15 +1,15 @@
 
-import LoginForm from './CreateAccountForm';
+import ProfileForm from './ProfileForm';
 import HeroImg from '../PageComponents/HomepageComponents/HeroImg';
 
 
-export default function CreateAccount() {
+export default function Profile() {
 
   return (
       
     <div className="hero">
          <HeroImg />
-         <LoginForm />
+         <ProfileForm />
         
         
     </div>

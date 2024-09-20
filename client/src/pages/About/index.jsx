@@ -1,7 +1,7 @@
 
 import AboutForm from './AboutForm';
-import InfoCards from '../Page Components/HomepageComponents/info-section';
-import Footer from '../Page Components/HomepageComponents/footerSection';
+import HeroImg from '../PageComponents/HomepageComponents/HeroImg';
+
 
 export default function About() {
 
@@ -10,9 +10,10 @@ export default function About() {
     
   
     <div className="hero">
+       <HeroImg />
         <AboutForm />
-        <InfoCards />
-        <Footer />
+        
+        
     </div>
   )
 }

@@ -8,12 +8,11 @@ import Login from './pages/Login';
 import PageNotFound from './pages/404';
 import About from './pages/About';
 import CreateAccount from './pages/CreateAccount';
+import Photos from './pages/Photos';
+import Albums from './pages/Albums';
+import Profile from './pages/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import EventList from './pages/EventList';
-import EventSingle from './pages/EventSingle';
-import EventAdd from './pages/EventAdd';
-import EventEdit from './pages/EventEdit';
 
 
 
@@ -26,9 +25,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-
         element: <Home />
       },
+      
+      
       {
         path: '/login',
         element: <Login />
@@ -36,22 +36,6 @@ const router = createBrowserRouter([
       {
         path: '/CreateAccount',
         element: <CreateAccount />
-      },
-      {
-        path: '/events',
-        element: <EventList />
-      },
-      {
-        path: '/event/:eventId',
-        element: <EventSingle />
-      },
-      {
-        path: '/event/edit/:eventId',
-        element: <EventEdit />
-      },
-      {
-        path: '/event/add',
-        element: <EventAdd />
       },
       {
         path: '/about',
@@ -64,6 +48,18 @@ const router = createBrowserRouter([
       {
         path: '/Create-account',
         element: <CreateAccount />
+      },
+      {
+        path: '/photos',
+        element: <Photos />
+      },
+      {
+        path: '/albums',
+        element: <Albums />
+      },
+      {
+        path: '/profile',
+        element: <Profile />
       },
     ]
   }

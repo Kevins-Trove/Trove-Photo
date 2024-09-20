@@ -11,7 +11,7 @@ import Auth from '../../utils/auth';
 
 const LoginForm = () => {
   const navigate = useNavigate();
-  const mountain = "https://c.wallhere.com/photos/79/d7/1200x800_px_Hiking_landscape_mist_Morning_mountains_nature_photography-1263873.jpg!d";
+  
   const [userFormData, setUserFormData] = useState({ email: '', password: '' });
   const [validated] = useState(false);
   const [showAlert, setShowAlert] = useState(false);
@@ -63,26 +63,21 @@ const LoginForm = () => {
   };
 
   return (
-    <header style={{paddingLeft: 0}}>
-        <div
-        id='hero'
-        className="p-5 text-center"
-        style={{backgroundImage: `url(${mountain})`, height: 500}}
-        >
-        <div>
-            <div className="d-flex justify-content-center align-items-center h-100">
-                <div className='hero-text mask'>
+    <div className="hero-container">
+            <div className="hero-div">
                     
-                    <h4 className="mb-3">Login</h4>
-                    <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
-        <Alert
-          dismissible
-          onClose={() => setShowAlert(false)}
-          show={showAlert}
-          variant="danger"
-        >
-          Something went wrong with your login credentials!
-        </Alert>
+                <h4 className="mb-3">Login</h4>
+                <Form noValidate validated={validated} onSubmit={handleFormSubmit}>
+                
+                <Alert
+                  dismissible
+                  onClose={() => setShowAlert(false)}
+                  show={showAlert}
+                  variant="danger"
+                >
+                  Something went wrong with your login credentials!
+                </Alert>
+        
         <Form.Group className='mb-3'>
           <Form.Label htmlFor="email">Email</Form.Label>
           <Form.Control
@@ -112,26 +107,26 @@ const LoginForm = () => {
             Password is required!
           </Form.Control.Feedback>
         </Form.Group>
-        <Button
-          disabled={!(userFormData.email && userFormData.password)}
-          type="submit"
-          variant="success"
-        >
-          Submit
-        </Button>
-        <Button className='m-3'
-          type="button" onClick={goToCreateAccountPage}  >
-          Create Account
-        </Button>
+        <div className='hero-button-container'>
+            <Button className='button button-default m-3'
+              disabled={!(userFormData.email && userFormData.password)}
+              type="submit"
+              variant="success"
+            >
+              Submit
+            </Button>
+            <Button className='button button-hightlight  m-3'
+              type="button" onClick={goToCreateAccountPage}  >
+              Create Account
+            </Button>
+        </div>
       </Form>
                    
+      </div>
+  </div>
+
                     
-                    
-                </div>
-            </div>
-        </div>
-        </div>
-    </header>
+              
   )
 }
 
