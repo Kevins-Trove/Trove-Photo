@@ -62,15 +62,9 @@ const CreateAccountForm = () => {
   
 
   return (
-    <header style={{paddingLeft: 0}}>
-        <div
-        id='hero'
-        className="p-5 text-center"
-        style={{backgroundImage: `url(${mountain})`, height: 500}}
-        >
-        <div>
-            <div className="d-flex justify-content-center align-items-center h-100">
-                <div className='hero-text mask'>
+    <div className="hero-container">
+            <div className="hero-div">
+       
                     
                     <h4 className="mb-3">Create account</h4>
     {/* This is needed for the validation functionality above */}
@@ -129,28 +123,27 @@ const CreateAccountForm = () => {
             Password is required!
           </Form.Control.Feedback>
         </Form.Group>
-        <Button
-          disabled={
-            !(
-              userFormData.username &&
-              userFormData.email &&
-              userFormData.password
-            )
-          }
-          type="submit"
-          variant="success"
-        >
-          Submit
-        </Button>
+        <div className='hero-button-container'>
+            <Button className='button button-hightlight  m-3'
+              disabled={
+                !(
+                  userFormData.username &&
+                  userFormData.email &&
+                  userFormData.password
+                )
+              }
+              type="submit"
+              variant="success"
+            >
+              Submit
+            </Button>
+        </div>
       </Form>
                    
+      </div>
+      </div>        
                     
-                    
-                </div>
-            </div>
-        </div>
-        </div>
-    </header>
+              
   )
 }
 

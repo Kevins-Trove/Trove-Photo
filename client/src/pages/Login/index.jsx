@@ -1,7 +1,7 @@
 
 import LoginForm from './LoginForm';
+import HeroImg from '../PageComponents/HomepageComponents/HeroImg';
 
-import Footer from '../PageComponents/HomepageComponents/footerSection';
 
 export default function Login() {
 
@@ -10,9 +10,8 @@ export default function Login() {
     
   
     <div className="hero">
+         <HeroImg />
         <LoginForm />
-
-        <Footer />
     </div>
   )
 }

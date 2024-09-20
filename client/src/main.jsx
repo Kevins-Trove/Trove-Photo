@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import PageNotFound from './pages/404';
 import About from './pages/About';
 import CreateAccount from './pages/CreateAccount';
+import Photos from './pages/Photos';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: '/Create-account',
         element: <CreateAccount />
+      },
+      {
+        path: '/Photos',
+        element: <Photos />
       },
     ]
   }
