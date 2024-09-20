@@ -1,4 +1,4 @@
-import background from '../../../../public/Photo Album.jpg';
+import background from '/images/Photo Album.jpg';
 
 
 

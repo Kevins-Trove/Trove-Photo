@@ -4,6 +4,9 @@ scalar Date
 
 type User {
     _id: ID
+    firstName: String
+    lastName: String
+    profileImage: String
     username: String
     email: String
     password: String

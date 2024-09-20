@@ -18,6 +18,10 @@ export default function Home() {
       navigate('/photos');
   };
 
+  const goToAlbumsPage = () => {
+    navigate('/albums');
+};
+
   
   return (
     
@@ -30,9 +34,17 @@ export default function Home() {
                     <h4 className="mb-3">Private photo vault</h4>
                    
                     {token ? 
-                        <Button className='button' onClick={goToPhotosPage}>
+                       <div className='hero-button-container'>
+                       <Button className='button button-default m-3' onClick={goToPhotosPage}>
                             Photos
                         </Button>
+                        <Button className='button button-default m-3' onClick={goToAlbumsPage}>
+                        Albums
+                        </Button>
+                   </div>
+                        
+                       
+                        
                          : <Button className='button button-default' onClick={goToLoginPage}>
                             Login
                         </Button>

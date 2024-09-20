@@ -9,6 +9,8 @@ import PageNotFound from './pages/404';
 import About from './pages/About';
 import CreateAccount from './pages/CreateAccount';
 import Photos from './pages/Photos';
+import Albums from './pages/Albums';
+import Profile from './pages/Profile';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -23,9 +25,10 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-
         element: <Home />
       },
+      
+      
       {
         path: '/login',
         element: <Login />
@@ -47,8 +50,16 @@ const router = createBrowserRouter([
         element: <CreateAccount />
       },
       {
-        path: '/Photos',
+        path: '/photos',
         element: <Photos />
+      },
+      {
+        path: '/albums',
+        element: <Albums />
+      },
+      {
+        path: '/profile',
+        element: <Profile />
       },
     ]
   }

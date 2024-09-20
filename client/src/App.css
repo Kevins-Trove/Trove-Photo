@@ -95,32 +95,20 @@ color:  var(--hightlightColor)  !important;
   align-items: center;
 }
 
-.profile-div {
-    padding-left: 20px;
-    height: 75px;
-    height: 75px;
-}
 
 .profile-photo {
-  
-    width: 75px;
-    height: 75px;
-   
-}
-
-.profile-photo2 {
-  
-  width: 75px;
-  height: 75px;
-  border-color: var(--hightlightColor) ;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
-  border-width: 2px;
+  object-fit: contain;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Apply drop shadow */
 }
-.nav-link{
-    color: #ffffff !important;
-}
 
-.navbar-nav .active {
-    color: red;
-  }
+.profile-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}

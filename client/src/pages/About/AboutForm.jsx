@@ -1,10 +1,11 @@
-// see SignupForm.js for comments
-
 
 const AboutForm = () => {
   
   return (
-    <div>ABout
+    <div>
+      <h1>ABout</h1>
+     
+
   </div>
 
                     

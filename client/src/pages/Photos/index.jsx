@@ -1,4 +1,5 @@
-
+import ImageContainer from './imageContainer';
+import Profile from './Profile';
 
 import HeroImg from '../PageComponents/HomepageComponents/HeroImg';
 
@@ -11,7 +12,10 @@ export default function Photos() {
   
     <div className="hero">
          <HeroImg />
-        <h1>Photos</h1>
+         
+         
+         <ImageContainer />
+        
     </div>
   )
 }
